@@ -27,7 +27,6 @@ tags:
 - delete-spam-daily
 comments: []
 ---
-<p><strong>Delete Comment Spam using a Cron Job</strong></p>
 <p>WordPress catches all of the comment spam, but it doesn't seem to delete it often enough. If you have a high traffic site, this can become megabytes in your database. Bleh. I don't have a high traffic site, but I sync my databases off-site everyday and spam wastes my bandwidth. So I delete all the comments marked as spam automatically each day using a scheduled cron job so that I never even have to see it. Could I possibly delete a real comment? Yes. Does the convenience of never even knowing about comment spam outweigh the risk? You bet.</p>
 <p>Create a bash script in your scripts folder by typing this at the command prompt:</p>
 <blockquote><p><code>sudo pico /home/brockangelo/scripts/del_spam.sh</code></p></blockquote>

@@ -22,8 +22,9 @@ tags:
 - apache
 comments: []
 ---
-<p><strong>Displaying JPG files over a mapped drive when using Apache</strong>: <br />
-I don't think that most people would have guessed this, but if the images you are going to display on your website are located on a mapped network drive, Apache needs to be modified in order for the image to display. If you mapped a network drive but it only displays the text of the image in the browser, you need to change the following inside of your Apache Directives:</p>
+
+I don't think that most people would have guessed this, but if the images you are going to display on your website are located on a mapped network drive, Apache needs to be modified in order for the image to display. If you mapped a network drive but it only displays the text of the image in the browser, you need to change the following inside of your Apache Directives:
+
 <blockquote><p><code>&lt;Directory "/path-to-mapped-drive"&gt;<br />
 EnableSendfile Off<br />
 &lt;/Directory&gt;<br />

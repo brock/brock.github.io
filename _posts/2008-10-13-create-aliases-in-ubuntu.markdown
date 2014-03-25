@@ -155,7 +155,7 @@ comments:
   date_gmt: '2012-10-11 02:47:16 -0500'
   content: In Ubuntu 12.04, aliases should be placed in ~/.bash_aliases
 ---
-<p><strong>How to Create an Alias in Ubuntu</strong></p>
+
 <p>If you run the same commands in Linux (or Ubuntu) all the time, you can add what is called an "alias" to your user account. For example, I regularly type:</p>
 <blockquote><p><code>ls -alh</code></p></blockquote>
 <p>So I setup an alias so that I can just type <strong>la</strong>. (also, see my <a href="http://brockangelo.com/2009/05/30/my-top-10-ubuntu-aliases/">Top 10 Aliases</a> list) To do this, simply edit your "profile". Bash is the program that you typically use when you are in a command shell, so it may be called your "bash profile". Your profile is in your Home folder and stores all of your preferences. Just edit the ".profile" or the ".bash_profile" if it exists.</p>

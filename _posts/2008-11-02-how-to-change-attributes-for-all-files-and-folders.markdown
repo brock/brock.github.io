@@ -26,7 +26,7 @@ comments:
     and I was really not sure as to how to protect my folders properly at the same
     time as allowing proper access to the content - thanks Ubuntu
 ---
-<p><strong>How to Change Attributes for all Files and Folders in Linux</strong></p>
+
 <p>I am regularly working with WordPress and need to change the attributes of my files and folders so that it is locked down and secure. This is a two step process. I first change the attributes of all files to 644. Then I change the attributes of all folders to 755. However, you should decide what is best for you by reading the article on the Codex called <a href="http://codex.wordpress.org/Changing_File_Permissions">Changing File Permissions</a> if you are new to this topic.</p>
 <p>This can be done from anywhere, since I always type out the full path to the location so I know I'm not making any mistakes. I enter the following to change all files:</p>
 

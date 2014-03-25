@@ -151,7 +151,6 @@ comments:
     so they are the same size and perfectly aligned. What free software could I use
     to do this? Thanks.
 ---
-<p><strong>How to Batch Resize Photos in Photoshop</strong></p>
 <p>Resizing groups of photos is very easy if you are using Photoshop. I am using Photoshop CS3 on a Mac in this example. Though I am not sure if this works in Elements, I do know that it works in CS2 on both a PC & a Mac.</p>
 <p>Here's the concept: you have a folder full of JPG files and they are all very large. You want to resize all of the photos at once, or you want to create small copies of all of the photos at once, but save it to another location. No problem.</p>
 <p>Just click the File menu, and hover over Scripts, then select Image Processor:</p>
