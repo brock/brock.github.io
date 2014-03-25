@@ -23,8 +23,8 @@ comments: []
 ---
 <p>I found an easy way to find out what Novell Netware servers you are connected to and can access. This requires that you have <strong>ncpfs</strong> installed in Linux and <em>I'm guessing</em> Novell's Netware client for IPX in Windows. If you do, just type:</p>
 
-```slist```
+`slist`
 
 <p>And you'll see a quick list of all the Novell machines on your network. If you don't have <strong>ncpfs</strong>, Ubuntu will prompt you to install ncpfs by running:</p>
 
-```sudo apt-get install ncpfs```
+`sudo apt-get install ncpfs`
