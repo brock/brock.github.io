@@ -156,12 +156,6 @@ comments:
 <p>Here's the concept: you have a folder full of JPG files and they are all very large. You want to resize all of the photos at once, or you want to create small copies of all of the photos at once, but save it to another location. No problem.</p>
 <p>Just click the File menu, and hover over Scripts, then select Image Processor:</p>
 <p><center><img class="aligncenter" src="http://farm4.static.flickr.com/3187/2955918173_05e34d5366.jpg" alt="Script Image Processor" width="500" height="404" /></center><br /></p>
-<blockquote><p><center>Be sure to check out my Photoshop site<br />
-with High Resolution Video Tutorials</p>
-<h2><a href="http://photoshopsamurai.com">PhotoshopSamurai.com</a></h2>
-<p></center>
-</p></blockquote>
-<p><!--nextpage--></p>
 <p>A menu will pop up with what looks like several daunting options. Don't worry. All it is asking for is the location of the photo folder, where you want your resized copies to go, and how small you want them. Just follow the numbers on the left. 1, 2, 3. </p>
 <p>Before I do this, I usually create a folder inside the photo folder and call it "Small Copies" so that I know exactly what it is:</p>
 <p><center><img class="aligncenter" src="http://farm4.static.flickr.com/3249/2955917709_08ebcc0539.jpg" alt="Image Processor" width="479" height="500" /></center><br /></p>
