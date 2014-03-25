@@ -127,18 +127,21 @@ comments:
     rel=\"nofollow\">????</a> ???? ?????? ?? ???? ??? ???? ???? ???? ???? ?????? ????
     ?????"
 ---
-<p><strong>Search and Replace a Custom Field in WordPress using PHPMyAdmin</strong></p>
-<p>If you've ever used Microsoft Excel, you probably have an idea of just how easy changing hundreds of cells can be. Gone are the days of manually typing line by line any corrections that you need to make. The same is true when you are working with a database like we are in WordPress. </p>
-<p>This example performs a search and replace of all custom fields that meet a specified criteria. In this case, I'm looking for all staff member pages that have a custom field for a department phone number that was incorrect. We want to replace that with a new number. Using PHPMyAdmin and running a SQL query, I can select all of them to see the results before I do anything to my databse:</p>
-<blockquote><p><code>SELECT * FROM `wp_postmeta` WHERE `meta_key` LIKE 'DeptPhone' AND `meta_value` LIKE '212-555-1212'</code></p></blockquote>
-<p>It is worth mentioning, that you can also use wildcards if you want to include more results. The '%' is your wildcard:</p>
-<blockquote><p><code>SELECT * FROM `wp_postmeta` WHERE `meta_key` LIKE '%eptPhone' AND `meta_value` LIKE '212-555-%'</code></p></blockquote>
-<p>This yields the same results. It is also worth pointing out that the quotation mark around our text values and the tick mark around our table column names are different.</p>
-<blockquote><ul>
-<li><code>`meta_key`</code> 	uses tick marks	(this is usally the top left key on your keyboard, next to the 1)</li>
-<li><code>'%DeptPhone'</code> 	uses a single quotation mark (this is next to the enter key)</li>
-</ul>
-</blockquote>
-<p>So, to perform the changes, we need to use the UPDATE command instead of select, and actually replace text. Here goes:</p>
-<blockquote><p><code>UPDATE `wp_postmeta` SET `meta_value` = replace(meta_value, '212-555-1212', '212-444-1212') WHERE `meta_key` LIKE 'DeptPhone'<br />
-</code></p></blockquote>
+If you've ever used Microsoft Excel, you probably have an idea of just how easy changing hundreds of cells can be. Gone are the days of manually typing line by line any corrections that you need to make. The same is true when you are working with a database like we are in WordPress.
+
+This example performs a search and replace of all custom fields that meet a specified criteria. In this case, I'm looking for all staff member pages that have a custom field for a department phone number that was incorrect. We want to replace that with a new number. Using PHPMyAdmin and running a SQL query, I can select all of them to see the results before I do anything to my databse:
+
+```SELECT * FROM `wp_postmeta` WHERE `meta_key` LIKE 'DeptPhone' AND `meta_value` LIKE '212-555-1212'```
+
+It is worth mentioning, that you can also use wildcards if you want to include more results. The '%' is your wildcard:
+
+```SELECT * FROM `wp_postmeta` WHERE `meta_key` LIKE '%eptPhone' AND `meta_value` LIKE '212-555-%'```
+
+This yields the same results. It is also worth pointing out that the quotation mark around our text values and the tick mark around our table column names are different.
+
+* ``` `meta_key` ``` uses tick marks	(this is usally the top left key on your keyboard, next to the 1)
+* `'%DeptPhone'` uses a single quotation mark (this is next to the enter key)
+
+So, to perform the changes, we need to use the UPDATE command instead of select, and actually replace text. Here goes:
+
+```UPDATE `wp_postmeta` SET `meta_value` = replace(meta_value, '212-555-1212', '212-444-1212') WHERE `meta_key` LIKE 'DeptPhone'```

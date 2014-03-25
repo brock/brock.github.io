@@ -37,12 +37,15 @@ comments:
     and we are looking to exchange solutions with \r\nother folks, be sure to shoot
     me an email if interested."
 ---
-<p><strong>How to Change Ownership of All Files and Folders in a Directory</strong></p>
-<p>I use dynamic DNS for all of my domain names. This means that from time to time, I'll move a website from one server to another for testing. In these cases, it is helpful to be able to log in as the administrator on the parent account and ftp files through the parent account. It's confusing, I know.</p>
-<p>But if you need to log in to FTP as an admin or some other user than the typical owner, you'll find that you can't FTP anything in since the directory is owned by that website. So I go in and quickly change the ownership of all files and folders to the admin user so that I can upload files again. Here's how you do it:</p>
-<blockquote><p><code>sudo chown -R adminUserName folderToChown</code></p></blockquote>
-<p>Sudo:  elevate privileges of the user.<br />
-chown: change the ownership of the files<br />
--R: do it recursively (meaning, do it to all files and folders underneath this point)<br />
-adminUserName: this is the account that you want to own all the files<br />
-folderToChown: this is the top-level folder where ownership changes will be made</p>
+
+I use dynamic DNS for all of my domain names. This means that from time to time, I'll move a website from one server to another for testing. In these cases, it is helpful to be able to log in as the administrator on the parent account and ftp files through the parent account. It's confusing, I know.
+
+But if you need to log in to FTP as an admin or some other user than the typical owner, you'll find that you can't FTP anything in since the directory is owned by that website. So I go in and quickly change the ownership of all files and folders to the admin user so that I can upload files again. Here's how you do it:
+
+```sudo chown -R adminUserName folderToChown```
+
+* Sudo:  elevate privileges of the user.
+* chown: change the ownership of the files
+* -R: do it recursively (meaning, do it to all files and folders underneath this point)
+* adminUserName: this is the account that you want to own all the files
+* folderToChown: this is the top-level folder where ownership changes will be made

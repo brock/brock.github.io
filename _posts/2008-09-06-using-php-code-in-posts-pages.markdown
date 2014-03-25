@@ -58,8 +58,8 @@ comments: []
 </table>
 <p></center></p></blockquote>
 <p>This is, however, very tedious if you think you'll put PHP in your code more than once. You can do this conversion much more intelligently by using the <a href="http://wordpress.org/extend/plugins/wp-syntax/">WP-Syntax</a> plugin. It creates nice colorful code boxes and formats them to any code format (PHP, Java, HTML, C+, Ruby, etc). It looks like this:</p>
-<p>{% highlight php %}
-<br />
+
+```php
 <div id="navbar">
     <ul>
     <table width="100%">
@@ -77,4 +77,5 @@ comments: []
         </tr>
     </table>
     </ul>
-</div>{% endhighlight %}</p>
+</div>
+```

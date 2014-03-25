@@ -94,13 +94,13 @@ comments:
     write-up very compelled me to take a look at and do it! Your writing taste has
     been surprised me. Thanks, quite great article.
 ---
-<p><strong>Search and Replace MySQL using PHPMyAdmin</strong></p>
-<p>This is a life-saver: an easy way to search any table inside your database and replace one string of text with another. It works like a charm. But be careful, search first to see the results of your query before you commit the changes, and always backup prior to any database work.</p>
-<p>Here is how you test the waters safely:</p>
-<blockquote><p><code>SELECT * FROM `wp_posts` WHERE `post_content` LIKE '%oops%'</code></p></blockquote>
-<p>Translation:</p>
-<blockquote><p><code>SELECT * FROM `table_name` WHERE `field_name` LIKE '%unwanted_text%'</code></p></blockquote>
-<p>And here is how you do some damage:</p>
-<blockquote><p><code>UPDATE `wp_posts` SET `post_content` = replace(post_content, 'oops', 'much better')</code></p></blockquote>
-<p>And translated:</p>
-<blockquote><p><code>UPDATE `table_name` SET `field_name` = replace(same_field_name, 'unwanted_text', 'wanted_text')</code></p></blockquote>
+
+This is a life-saver: an easy way to search any table inside your database and replace one string of text with another. It works like a charm. But be careful, search first to see the results of your query before you commit the changes, and always backup prior to any database work.
+Here is how you test the waters safely:
+```SELECT * FROM `wp_posts` WHERE `post_content` LIKE '%oops%'```
+Translation:
+```SELECT * FROM `table_name` WHERE `field_name` LIKE '%unwanted_text%'```
+And here is how you do some damage:
+```UPDATE `wp_posts` SET `post_content` = replace(post_content, 'oops', 'much better')```
+And translated:
+```UPDATE `table_name` SET `field_name` = replace(same_field_name, 'unwanted_text', 'wanted_text')```

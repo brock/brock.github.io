@@ -53,8 +53,10 @@ comments:
 ---
 <p><strong>How to Remove Non-Empty Directories in Linux</strong></p>
 <p>Here is one that I am using all the time: deleting directories or an entire directory in Ubuntu (linux). It's very easy (and dangerous) as it will delete everything without asking for confirmation. But very handy when you know you just want to delete it all quickly.</p>
-<blockquote><h2>This is dangerous! Use with caution!</h2>
-<p><code>sudo rm -r *</code></p></blockquote>
+<h2>This is dangerous! Use with caution!</h2>
+
+`sudo rm -r *`
+
 <p>That deletes everything inside the current directory. But if you want to delete an entire directory that is inside your current directory, you do this:</p>
-<blockquote><p><code>rm -r directoryname</code></p></blockquote>
+`rm -r directoryname`
 <p>Be careful, and good luck! :)</p>
