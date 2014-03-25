@@ -54,7 +54,9 @@ comments:
 <p><strong>How to Display the Contents of a File Using PHP</strong></p>
 <p>PHP has a built in function to display the <em>contents</em> of a file. This is helpful if you want to update a webpage to reflect some data that is regularly updated or output to a file. It is also helpful if you have access to the web server and it is easier for you to update a text file than it is to edit html. Simply point your webpage to the text file and the contents of the webpage get updated automatically.</p>
 <p>Here's how it works:</p>
-<p>[php]&lt;?php<br />
-echo file_get_contents('http://brockangelo.com/uptime.txt');<br />
-?&gt;[/php]</p>
+
+{% highlight php %}
+<?php echo file_get_contents('http://brockangelo.com/uptime.txt'); ?>
+{% endhighlight %}
+
 <p>Easy enough. I used to have a message in the footer of this webpage that said "This server has been up for 14 days, 7 hours, 22 minutes." All that was doing was reading the contents of the text file that got updated every hour.</p>
